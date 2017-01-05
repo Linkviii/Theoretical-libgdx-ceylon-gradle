@@ -1,0 +1,41 @@
+plugins {
+    id 'com.athaydes.ceylon' version '1.3.0'
+}
+
+ceylon {
+    module = "rest.forthe"
+    //testModule = "test.com.acme.awesome"
+    flatClasspath = true
+    importJars = false
+   // sourceRoots = ['source', 'src/main/ceylon']
+    //resourceRoots = ['resource', 'src/main/resources']
+    //output = 'dist'
+    verbose = true
+    javaRuntimeDestination = file('target/jvm')
+    entryPoint = "rest.forthe::main"
+    
+   
+}
+
+repositories {
+    
+    mavenCentral()
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+        jcenter()
+}
+
+ext {
+    	gdxVersion = '1.9.5'
+}
+
+dependencies {
+
+		
+		
+		ceylonCompile "com.badlogicgames.gdx:gdx:$gdxVersion"
+        ceylonCompile "com.badlogicgames.gdx:gdx-box2d:$gdxVersion"
+
+        ceylonCompile "com.badlogicgames.gdx:gdx-backend-lwjgl:$gdxVersion"
+        ceylonCompile "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
+        ceylonCompile "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-desktop"
+}

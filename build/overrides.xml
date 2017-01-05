@@ -1,0 +1,16 @@
+<overrides>
+  <artifact groupId='com.badlogicgames.gdx' artifactId='gdx-box2d' version='1.9.5' shared='true'>
+    <add groupId='com.badlogicgames.gdx' artifactId='gdx' version='1.9.5' shared='true' />
+  </artifact>
+  <artifact groupId='com.badlogicgames.gdx' artifactId='gdx-backend-lwjgl' version='1.9.5' shared='true'>
+    <add groupId='com.badlogicgames.gdx' artifactId='gdx' version='1.9.5' shared='true' />
+    <add groupId='org.lwjgl.lwjgl' artifactId='lwjgl' version='2.9.2' shared='true' />
+    <add groupId='org.lwjgl.lwjgl' artifactId='lwjgl-platform' version='2.9.2' shared='true' />
+    <add groupId='net.java.jinput' artifactId='jinput' version='2.0.5' shared='true' />
+    <add groupId='net.java.jutils' artifactId='jutils' version='1.0.0' shared='true' />
+    <add groupId='net.java.jinput' artifactId='jinput-platform' version='2.0.5' shared='true' />
+    <add groupId='org.lwjgl.lwjgl' artifactId='lwjgl_util' version='2.9.2' shared='true' />
+    <add groupId='com.badlogicgames.jlayer' artifactId='jlayer' version='1.0.1-gdx' shared='true' />
+    <add groupId='org.jcraft' artifactId='jorbis' version='0.0.17' shared='true' />
+  </artifact>
+</overrides>
