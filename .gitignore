@@ -1,0 +1,13 @@
+
+#eclipse
+.settings
+
+.ceylon/
+
+modules/
+classes/
+.exploded/
+
+
+gradle/
+
